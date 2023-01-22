@@ -4,7 +4,6 @@ from flask import Flask, render_template, request
 import pandas as pd
 import smtplib
 
-
 app = Flask(__name__)
 
 
@@ -146,7 +145,3 @@ def topics():  # put application's code here
 
     return 'success'
     # return "success"
-
-
-if __name__ == '__main__':
-    app.run(debug=False,host="0.0.0.0")
