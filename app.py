@@ -107,7 +107,8 @@ def topics():  # put application's code here
     file = request.files['file']
     file.save(file.filename)
     print(file.name)
-    ex_df = pd.read_excel(os.path.abspath(file.filename))
+    ex_df = pd.read_excel(os.path.abspath(file.filename), engine='openpyxl',
+                          )
     print(os.path.abspath(file.filename))
     ex_df.to_csv(f'{Path(file.filename).stem}.csv')
     print(os.path.dirname(os.path.abspath(file.filename)))
