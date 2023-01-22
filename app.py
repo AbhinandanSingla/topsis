@@ -118,8 +118,8 @@ def topics():  # put application's code here
                                 impacts,
                                 df.copy())
     result['Fund Name'] = df1['Fund Name']
-    gmail_user = 'deepusingla0448@gmail.com'
-    gmail_password = 'sjmbidmwrjchprkd'
+    gmail_user = 'sahilkadiyan9817@gmail.com'
+    gmail_password = 'sdmsywzqwtqbzbre'
 
     sent_from = gmail_user
     to = [res['email']]
